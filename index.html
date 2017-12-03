@@ -3,30 +3,61 @@
   <head>
     <title>Colmar academy</title>
     <link href= "./resources/css/style.css"  type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="./Resources/css/reset.css">
   <body>
   <!-- Header-->
   <div class="header">
-    <h3>COLMARACADEMY</h3>
 
     <div class="header-side">
+        <span><img src=".\resources\images\ic-logo.svg" style="float:left;"/>
+          <span class="colmar">COLMAR</span><span class="academy">ACADEMY</span></span>
+    </div>
+    <div class="menu">
         <a>On campus</a>
         <a>Online</a>
         <a>For companies</a>
         <a>Sign in</a>
     </div>
   </div>
+  <!--Header mobuile-->
+  <div class="header-mobile">
+    <img src=".\resources\images\ic-logo.svg">
+    <img src=".\resources\images\ic-on-campus.svg">
+    <img src=".\resources\images\ic-online.svg">
+    <img src=".\resources\images\ic-login.svg">
+  </div>
   <!--introduction section-->
   <div class="introduction">
-    <h2>Learn something new everyday</h2>
-    <h3>Lorem ipsum dolor sit amet,consectetur adipiscing elit</h3>
-    <div class="start-button">
-      <h3>Start here<h3>
+
+    <div class="introduction-img">
+      <img src=".\resources\images\banner.jpg">
+
+    <div class="introduction-right">
+      <h2>Learn something new everyday</h2>
+      <h3>Lorem ipsum dolor sit amet,consectetur adipiscing elit</h3>
+      <span class="start-button">Start here</span>
+    </div>
+    </div>
+  </div>
+  <!-- introduction mobile section-->
+  <div class="introduction-mobile">
+
+    <div class="introduction-mobile-img">
+      <img src=".\resources\images\banner.jpg">
+
+    <div class="introduction-mobile-right">
+      <h2>Learn something new everyday</h2>
+      <h3>Lorem ipsum dolor sit amet,consectetur adipiscing elit</h3>
+      <span class="start-mobile-button">Start here</span>
+    </div>
     </div>
   </div>
   <!-- Featured section-->
-  <div class="featured">
+  <section class="featured">
       <div class="featured-main">
-        <img>
+        <div class="featured-main-img">
+          <img src=".\resources\images\information-main.jpg">
+        </div>
         <h2>It doesn't hurt to keep practicing</h2>
         <p>"Curabitur vitae libero in ipsum porttitor consequat.Aliquam et commodo lectus,
           nec consequat neque.Sed non accumsan urna.Phasellus sed consequat ex. Etiam
@@ -34,106 +65,215 @@
         <p>Emanuel, Sr Strategist at Hiring.com</p>
       </div>
       <div class="featured-sidebar">
-        <div class="sidebar-img">
-          <img>
+        <div class="sidebar">
+          <div class="sidebar-img">
+            <img src=".\resources\images\information-orientation.jpg">
+          </div>
+          <div class="sidebar-text-section">
+            <h3>Orientation date</h3>
+            <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
+            <span id=read>Read more</span>
+          </div>
         </div>
-        <div class="sidebar-section 1">
-          <h3>Orientation date</h3>
-          <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
-          <span id=read>Read more</span>
+        <div class="sidebar">
+          <div class="sidebar-img">
+            <img src=".\resources\images\information-campus.jpg">
+          </div>
+          <div class="sidebar-text-section">
+            <h3>Our campus</h3>
+            <span>Find which campus is close by you</span>
+            <span id=read>Read more</span>
+          </div>
         </div>
-        <div class="sidebar-img">
-          <img>
-        </div>
-        <div class="sidebar-section 2">
-          <h3>Our campus</h3>
-          <span>Find which campus is close by you</span>
-          <span id=read>Read more</span>
-        </div>
-        <div class="sidebar-img">
-          <img>
-        </div>
-        <div class="sidebar-section 3">
-          <h3>Our guest lecture</h3>
-          <span>Join a keynote with Oliver Sack about music in medical treatment</span>
-          <span id=read>Read more</span>
+        <div class="sidebar">
+          <div class="sidebar-img">
+            <img src=".\resources\images\information-guest-lectures.jpg">
+          </div>
+          <div class="sidebar-text-section">
+            <h3>Our guest lecture</h3>
+            <span>Join a keynote with Oliver Sack about music in medical treatment</span>
+            <span id=read>Read more</span>
+          </div>
         </div>
       </div>
-  </div>
-  <div class="main-section">
+  <!-- Featured mobile section-->
+      <div class="featured-mobile-sidebar">
+        <div class="featured-mobile-container">
+          <div class="mobile-sidebar">
+            <div class="mobile-sidebar-img">
+              <img src=".\resources\images\information-orientation-mobile.jpg">
+            </div>
+            <div class="mobile-sidebar-text-section">
+              <h3>Orientation date</h3>
+              <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
+              <span id=read>Read more</span>
+            </div>
+          </div>
+          <div class="mobile-sidebar">
+            <div class="mobile-sidebar-img">
+              <img src=".\resources\images\information-campus-mobile.jpg">
+            </div>
+            <div class="mobile-sidebar-text-section">
+              <h3>Our campus</h3>
+              <span>Find which campus is close by you</span>
+              <span id=read>Read more</span>
+            </div>
+          </div>
+          <div class="mobile-sidebar">
+            <div class="mobile-sidebar-img">
+              <img src=".\resources\images\information-guest-lectures-mobile.jpg">
+            </div>
+            <div class="mobile-sidebar-text-section">
+              <h3>Our guest lecture</h3>
+              <span>Join a keynote with Oliver Sack about music in medical treatment</span>
+              <span id=read>Read more</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Main section-->
+  <section class="main-section">
     <h2>Start Learning</h2>
-      <div class="subsections">
-        <div class="course-section">
-          <img>
+    <div class="subsections">
+      <div class="course-section">
+        <div class="course-section-img">
+          <img src=".\resources\images\course-software.jpg">
+        </div>
+        <div class="course-section-text">
           <h3>Software engineering</h3>
           <span>COURSES</span>
           <span>Web Development, Mobile Development, iOT, APIs</span>
         </div>
-        <div class="course-section">
-          <img>
+      </div>
+      <div class="course-section">
+        <div class="course-section-img">
+          <img src=".\resources\images\course-computer-art.jpg">
+        </div>
+        <div class="course-section-text">
           <h3>Computer art</h3>
           <span>COURSES</span>
           <span>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</span>
         </div>
-        <div class="course-section">
-          <img>
+      </div>
+      <div class="course-section">
+        <div class="course-section-img">
+          <img src=".\resources\images\course-design.jpg">
+        </div>
+        <div class="course-section-text">
           <h3>Design</h3>
           <span>COURSES</span>
           <span>user Experience Design, User Research, Visual Design</span>
         </div>
-        <div class="course-section">
-          <img>
+      </div>
+      <div class="course-section">
+        <div class="course-section-img">
+          <img src=".\resources\images\course-data.jpg">
+        </div>
+        <div class="course-section-text">
           <h3>Data</h3>
           <span>COURSES</span>
           <span>data science, Big data, SQL, Data Visualization</span>
         </div>
-        <div class="course-section">
-          <img>
+      </div>
+      <div class="course-section">
+        <div class="course-section-img">
+          <img src=".\resources\images\course-business.jpg">
+        </div>
+        <div class="course-section-text">
           <h3>Business</h3>
           <span>COURSES</span>
           <span>Product Development, Business Development, Startup</span>
         </div>
-        <div class="course-section">
-          <img>
+      </div>
+      <div class="course-section">
+        <div class="course-section-img">
+          <img src=".\resources\images\course-marketing.jpg">
+        </div>
+        <div class="course-section-text">
           <h3>Marketing</h3>
           <span>COURSES</span>
           <span>Analytics, Content Marketing, Mobile Marketing</span>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- mobile main section-->
+  <div class="mobile-main-section">
+    <h2>Start Learning</h2>
+      <div class="mobile-course-section-text">
+        <h2>Software engineering</h2>
+      </div>
+      <div class="mobile-course-section-text">
+        <h2>Computer Art</h2>
+      </div>
+      <div class="mobile-course-section-text">
+        <h2>Design</h2>
+      </div>
+      <div class="mobile-course-section-text">
+        <h2>Data</h2>
+      </div>
+      <div class="mobile-course-section-text">
+        <h2>Business</h2>
+      </div>
+      <div class="mobile-course-section-text">
+        <h2>Marketing</h2>
+      </div>
   </div>
-  <!-- additional content section-->
-  <div class="additional-content">
+  <!-- thesis section-->
+  <div class="thesis">
     <h2>Thesis exhibit</h2>
-    <div class="featured">
-        <div class="featured-main">
-          <video>
+    <div class="thesis-section">
+      <div class="thesis-main-section">
+        <div class="thesis-video">
+          <video width="320" height="240" controls>
+            <source src=".\resources\videos\thesis.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="thesis-text">
           <h2>reimagine urban</h2>
-          <p>"Curabitur vitae libero in ipsum porttitor consequat.Aliquam et commodo lectus,
-            nec consequat neque.Sed non accumsan urna.Phasellus sed consequat ex. Etiam
-            eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            <p>"Curabitur vitae libero in ipsum porttitor consequat.Aliquam et commodo lectus,
+              nec consequat neque.Sed non accumsan urna.Phasellus sed consequat ex. Etiam
+              eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+        </div>
+        <div class="thesis-sidebar">
+          <div class="thesis-sidebr-section">
+            <div class='thesis-sidebar-img'>
+              <img src=".\resources\images\thesis-fisma.jpg">
+            </div>
+            <div class='thesis-sidebar-text'>
+              <h3>Fisma: Design and Prototype</h3>
+              <span>Designer showcase of new prototype producy</span>
+            </div>
+          </div>
+          <div class="thesis-sidebr-section">
+            <div class='thesis-sidebar-img'>
+              <img src=".\resources\images\thesis-now-and-then.jpg">
+            </div>
+            <div class='thesis-sidebar-text'>
+              <h3>Now and then</h3>
+              <span>Research study about New York</span>
+            </div>
+          </div>
+        </div>
 
-        </div>
-        <div class="featured-sidebar">
-          <div class="sidebar-img">
-            <img>
-          </div>
-          <div class="sidebar-section 4">
-            <h3>Fisma: Design and Prototype</h3>
-            <span>Designer showcase of new prototype producy</span>
-          </div>
-          <div class="sidebar-img">
-            <img>
-          </div>
-          <div class="sidebar-section 5">
-            <h3>Now and then</h3>
-            <span>Research study about New York</span>
-          </div>
-        </div>
+
+      </div>
+  </div>
+  <!--mobile thesis section-->
+  <div class="mobile-thesis">
+    <h2>Thesis exhibit</h2>
+    <div class="mobile-thesis-section">
+      <div class="mobile-thesis-video">
+        <video controls>
+          <source src=".\resources\videos\thesis.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
   </div>
   <!--footer section-->
   <footer>
-    <a>Copyright 2016 Colmar Academy. All rights reserved</a><span>Terms Privacy</span>
+    <a>&copy; 2016 Colmar Academy. All rights reserved</a><span> Terms Privacy</span>
   </footer>
   </body>
 </html>
