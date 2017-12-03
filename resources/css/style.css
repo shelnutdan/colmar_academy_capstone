@@ -1,5 +1,8 @@
+html{
+  font-size: 20px;
+}
 .header{
-  background-color: yellow;
+
   height: 64px;
   align-items: center;
   display: flex;
@@ -39,27 +42,43 @@
  /** Introuction section1**/
  .introduction{
    background-color: gray;
+   padding: 32px 24px;
+   display:flex;
  }
-.introduction img{
-  max-width:60%;
-  margin: 32px 24px 32px 24px;
+ .introduction-img{
+   width: 60%;
+   height:auto;
+ }
+.introduction-img img{
+  max-width:100%;
+
 }
 
 .introduction-text{
-  display: flex;
-  flex-direction: column;
+  display:flex;
+  flex-flow: column;
   justify-content: center;
-  align-items: baseline;
-  width: 100%;
+  padding: 24px;
 }
- .start-button{
-   background-color: #373737;
-   color:#F4F4F4;
-   width:60%;
-   text-align: center;
-  padding: 8px 0;
+ .introduction h2{
+   font-size: 2rem;
+   line-height: 2rem;
  }
 
+ .introduction h3{
+   font-size: 1rem;
+   line-height: 2rem;
+ }
+
+ .introduction button{
+   background-color: #003249;
+   color: #CCDBDC;
+   border: 0;
+   font-family: "Oxygen", sans-serif;
+   font-size: 1rem;
+   padding: 8px 0;
+   border: 2px solid #003249;
+ }
  h2{
    color:  #373737;
    opacity: 1;
@@ -73,13 +92,15 @@
 .featured{
   display: flex;
   flex-direction: row;
-  background-color: yellow;
+  background-color: white;
 }
 .featured-main{
   display: flex;
   flex-direction: column;
   max-width:60%;
-  margin: 32px 24px 32px 24px;
+  margin: 32px 24px ;
+
+
 }
 .main-info h2, p{
   color: #373737;
@@ -96,10 +117,16 @@
   flex-grow: 5;
   display: flex;
   flex-direction: column;
-  border-left: 1px solid black;
+  border-left: 2px solid gray;
+
 }
 .sidebar{
   display: flex;
+  border-bottom: 1px solid gray;
+
+}
+.sidebar:nth-child(3n+0){
+  background-color: teal;
 }
 .sidebar-img{
   padding: 16px;
@@ -122,7 +149,7 @@
 .sidebar-text-section h3{
   margin-bottom: 8px;
   color: #373737;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .sidebar-text-section span{
@@ -185,39 +212,68 @@
 
 .thesis-section{
   display: flex;
-  padding-bottom: 2rem;
+  width: 100%;
+
 }
 .thesis-main-section{
   display: flex;
   flex-direction: column;
-  margin-left: 24px;
-  margin-right: 16px;
-  width: 70%;
-}
-
-.thesis-video video{
-  width: 75%;
-  /*border: 3px solid green;*/
+  max-width:60%;
+  margin: 32px 24px ;
 }
 .thesis-video {
-  margin-bottom: 24px;
-  border: 3px solid green;
-  width: 70%;
+  height:auto;
+  width:100%;
+
+}
+.thesis-video video{
+  width: 80%;
+  /*border: 3px solid green;*/
+}
+.thesis-text{
+  margin:24px 0 32px 24px;
+}
+.thesis-text h3{
+  font-size:1.5rem;
+}
+.thesis-text p{
+  margin-top:16px;
+}
+.thesis-text span{
+  font-size:0.8rem;
 }
 .thesis-sidebar{
-  display: flex;
-}
-.thesis-sidebar-text{
+  margin: 32px 0;
+  width: 40%;
+  flex-grow: 5;
   display: flex;
   flex-direction: column;
+  border-left: 2px solid gray;
+
+}
+.thesis-sidebr-section{
+  display:flex;
+  align-items: center;
+  min-height:160px;
+}
+.thesis-sidebar-img{
+  max-width: 100%;
+  height:auto;
+
+}
+.thesis-sidebar-img img{
+  width: 35%;
+  height: auto;
+
+}
+.thesis-sidebar-text{
+  width: 65%;
+  display: flex;
+  flex-flow: wrap column;
   justify-content: center;
-  text-align: left;
-  color: #373737;
-
+  margin-right: 8px;
 }
-.thesis-sidebar-text h3{
 
-}
 
 .mobile-thesis{
   display: none;
