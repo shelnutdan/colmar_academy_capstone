@@ -4,12 +4,16 @@ html{
 div{
   display: block;
 }
+a,h2,h3,h4{
+  font-family: 'Roboto', sans-serif;
+}
 .header{
 
   height: 64px;
   align-items: center;
   display: flex;
   justify-content: space-between;
+  background-color: #ffffff;
 }
 .header-side{
   padding-left: 24px;
@@ -21,12 +25,12 @@ div{
   height:50px;
 }
 .colmar{
-  color:color: black;
+  color: #000000;
   font-weight: 800;
 }
 
 .academy{
-  color: gray;
+  color: 	#c0c0c0;
   font-weight: 400;
 }
 .header-side span{
@@ -57,7 +61,7 @@ div{
 }
  /** Introuction section1**/
  .introduction{
-   background-color: gray;
+   background-color: #fff8dc;
    padding: 32px 24px;
    display:flex;
  }
@@ -87,7 +91,7 @@ div{
  }
 
  .introduction button{
-   background-color: #003249;
+   background-color: #b8860b;
    color: #CCDBDC;
    border: 0;
    font-family: "Oxygen", sans-serif;
@@ -111,7 +115,7 @@ div{
   .introduction-mobile{
     display: flex;
     flex-direction: column;
-    background-color: #C0B283;
+    background-color: #fff8dc;;
   }
   .introduction-mobile-img img{
     width: 100%;
@@ -120,15 +124,22 @@ div{
   .introduction-mobile-text{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0;
+    align-items: left;
+    margin-left: 16px;
+  }
+  .introduction-mobile-text h2{
+    margin-top: 0.5rem;
+    font-size: 2rem;
   }
   .introduction-mobile-text h3{
     margin-top: 0.5rem;
+    font-weight: 300;
+    font-size: 1rem;
   }
   .start-mobile-button{
-    background-color: #003249;
-    color: #CCDBDC;
+    width: 100%;
+    background-color: #b8860b;
+    color: #000000;
     width: 70%;
     border: 0;
     font-family: "Oxygen", sans-serif;
@@ -143,7 +154,7 @@ div{
 .featured{
   display: flex;
   flex-direction: row;
-  background-color: white;
+  background-color: #fffaf0;
 }
 .featured-main{
   display: flex;
@@ -177,7 +188,7 @@ div{
 
 }
 .sidebar:nth-child(3n+0){
-  background-color: teal;
+  background-color: #b8860b;
 }
 .sidebar-img{
   padding: 16px;
@@ -229,6 +240,7 @@ div{
   #read-mob{
     color: blue;
     display: block;
+    margin-top:8px;
     margin-bottom: 32px;
   }
   .mobile-sidebar-img{
@@ -304,7 +316,7 @@ div{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #C0B283;
+    background-color: #b8860b;
 
   }
   .mobile-course-section-text{
@@ -316,7 +328,7 @@ div{
 }
 /**Thesis **/
 .thesis{
-
+  background-color:#ffffff;
 }
 .thesis h2{
   text-align: center;
@@ -377,7 +389,7 @@ div{
   display:flex;
   align-items: center;
   min-height:170px;
-  background-color: blue;
+  background-color: #b8860b;
 }
 .thesis-sidebar-img{
   max-width: 35%;
@@ -395,7 +407,7 @@ div{
   display: flex;
   flex-flow: wrap column;
   justify-content: center;
-  border: 2px solid gray;
+
 }
 
 .thesis-sidebar-text h3{
